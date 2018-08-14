@@ -1,0 +1,40 @@
+body {
+  background-color: #000; }
+
+p, #navbar {
+  font-size: 18px;
+  font-family: Montserrat;
+  font-weight: bold;
+  color: #fff; }
+
+footer {
+  text-align: center; }
+
+#navbar {
+  padding-top: 1%;
+  position: fixed;
+  height: 100%;
+  width: 12%;
+  left: 0;
+  background-color: #151515;
+  overflow-x: hidden; }
+  #navbar div {
+    padding-top: 1%;
+    padding-left: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 15%;
+    border: 1px solid;
+    border-color: #151515; }
+  #navbar i {
+    padding-right: 4%; }
+  #navbar p {
+    text-align: center; }
+
+.nav-link:hover {
+  background-color: #7e7e7e;
+  cursor: pointer; }
+
+/*# sourceMappingURL=portfolio.css.map */

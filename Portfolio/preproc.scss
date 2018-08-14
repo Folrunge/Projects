@@ -1,0 +1,60 @@
+$color: #fff;
+$family: Montserrat;
+$navcolor: #151515;
+
+
+body {
+	background-color: #000;
+}
+
+%navbar {
+	font-size: 18px;
+	font-family: $family;
+	font-weight: bold;
+	color: $color;
+}
+
+p, #navbar {
+	@extend %navbar;
+}
+
+
+footer {
+	text-align: center;
+
+		p {
+
+	}
+}
+
+#navbar {
+	padding-top: 1%;
+	position: fixed;
+	height: 100%;
+	width: 12%;
+	left: 0;
+	background-color: $navcolor;
+	overflow-x: hidden;
+	div {
+		padding-top: 1%;
+		padding-left: 2%; 
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 15%;
+		border: 1px solid;
+		border-color: $navcolor;
+			}
+	i {
+	padding-right: 4%;
+		}
+	p {
+		text-align: center;
+	}
+}
+
+.nav-link:hover {
+	background-color: #7e7e7e;
+	cursor: pointer;
+}
