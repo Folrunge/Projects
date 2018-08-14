@@ -7,17 +7,20 @@ p, li {
   font-weight: bold;
   color: #fff; }
 
-footer {
-  text-align: center;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  position: fixed; }
+#HomeTitle {
+  padding-top: 3%;
+  font-family: Montserrat;
+  font-weight: bold;
+  color: #fff;
+  text-align: center; }
+  #HomeTitle p {
+    padding-top: 2%;
+    color: #7e7e7e; }
 
 ul {
   position: fixed;
   height: 100%;
-  width: 12%;
+  width: 8%;
   left: 0px;
   background-color: #151515;
   overflow-x: hidden; }
@@ -27,12 +30,63 @@ ul {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 15%;
+    height: 13%;
     border: none;
     border-color: #151515; }
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+hr {
+  width: 13.5%;
+  background-color: #fff;
+  margin-left: 0px; }
+
+#AboutMe {
+  padding-top: 10%;
+  font-family: Montserrat;
+  font-weight: bold;
+  color: #fff;
+  text-align: justify; }
+  #AboutMe p {
+    padding: 1.5%;
+    background-color: #151515;
+    color: #7e7e7e; }
+
+#Skills {
+  padding-top: 3.5%;
+  font-family: Montserrat;
+  font-weight: bold;
+  color: #fff; }
+  #Skills h4 {
+    font-family: Montserrat;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 1%;
+    padding-bottom: 1%; }
+
+#first, #second {
+  text-align: center;
+  color: #7e7e7e;
+  font-size: 48px;
+  background-color: #151515;
+  padding: 0.5%;
+  width: 100%; }
 
 li:hover {
   background-color: #7e7e7e;
   cursor: pointer; }
+
+footer {
+  text-align: center;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  position: relative; }
+
+i {
+  padding: 0.5%; }
 
 /*# sourceMappingURL=portfolio.css.map */
