@@ -1,15 +1,15 @@
 body {
   background-color: #000; }
 
-p, li {
+p, li, #Projects, footer {
   font-size: 18px;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-weight: bold;
   color: #fff; }
 
 #HomeTitle {
   padding-top: 3%;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-weight: bold;
   color: #fff;
   text-align: center; }
@@ -45,8 +45,8 @@ hr {
   margin-left: 0px; }
 
 #AboutMe {
-  padding-top: 10%;
-  font-family: Montserrat;
+  margin-top: 10%;
+  font-family: Montserrat, sans-serif;
   font-weight: bold;
   color: #fff;
   text-align: justify; }
@@ -55,17 +55,24 @@ hr {
     background-color: #151515;
     color: #7e7e7e; }
 
-#Skills {
+#SkillsHeader {
+  padding-bottom: 0.5%; }
+
+#Skills, #Clients {
   padding-top: 3.5%;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-weight: bold;
   color: #fff; }
-  #Skills h4 {
-    font-family: Montserrat;
+  #Skills h4, #Clients h4 {
+    font-family: Montserrat, sans-serif;
     font-weight: bold;
     color: #fff;
     padding-top: 1%;
     padding-bottom: 1%; }
+
+#Clients {
+  text-align: center;
+  padding-bottom: 2.5%; }
 
 #first, #second {
   text-align: center;
@@ -73,7 +80,19 @@ hr {
   font-size: 48px;
   background-color: #151515;
   padding: 0.5%;
-  width: 100%; }
+  width: 98%;
+  margin-left: 0.5%; }
+
+#Projects {
+  margin-top: 10%; }
+
+#catchall1 img, #catchall2 img {
+  padding-bottom: 2%;
+  padding-top: 2%; }
+#catchall1 p, #catchall2 p {
+  background-color: #151515;
+  text-align: justify;
+  padding-left: 1%; }
 
 li:hover {
   background-color: #7e7e7e;

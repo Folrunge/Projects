@@ -1,7 +1,7 @@
 //Prepare css for width 400 and less. Rest width is ok
 
 $color: #fff;
-$family: Montserrat;
+$family: Montserrat, sans-serif;
 $navcolor: #151515;
 
 
@@ -64,7 +64,7 @@ hr {
 }
 
 #AboutMe {
-	padding-top: 10%;
+	margin-top: 10%;
 	font-family: $family;
 	font-weight: bold;
 	color: $color;
@@ -76,7 +76,11 @@ hr {
 	}
 }
 
-#Skills {
+#SkillsHeader {
+	padding-bottom: 0.5%;
+}
+
+#Skills, #Clients {
 	padding-top: 3.5%;
 	font-family: $family;
 	font-weight: bold;
@@ -90,13 +94,35 @@ hr {
 	}
 }
 
+#Clients {
+	text-align: center;
+	padding-bottom: 2.5%;
+}
+
 #first, #second {
 	text-align: center;
 	color: #7e7e7e;
 	font-size: 48px;
 	background-color: $navcolor;
 	padding: 0.5%;
-	width: 100%;
+	width: 98%;
+	margin-left: 0.5%;
+}
+
+#Projects {
+	@extend %navbar;
+	margin-top: 10%;
+}
+
+#catchall1, #catchall2 {
+	img {
+		padding-bottom: 5%;
+		padding-top: 5%;
+	}
+	p {
+		background-color: $navcolor;
+		text-align: justify;
+	}
 }
 
 li:hover {
@@ -110,6 +136,7 @@ footer {
 	left: 0px;
 	right: 0px;
 	position: relative;
+	@extend %navbar
 }
 
 i {
