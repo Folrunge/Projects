@@ -15,8 +15,8 @@
 
 <body>
 	<!--Navbar -->
-	<nav>
-			<ul href="" class="nav flex-column">
+	<nav class="container">
+			<ul class="nav flex-column">
 				<li>Home</li>
 				<li>About me</li>
 				<li>Projects</li>
@@ -24,21 +24,38 @@
 				<li>Contact</li>
 			</ul>
 	</nav>
+
+	<!-- build for mobile
+	<nav class="navbar-dark">
+		<div class="container-fluid">
+				<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collap" aria-controls="collap" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+			<div class="collapse navbar-collapse" id="collap">
+			<ul class="navbar-nav flex-column">
+				<li><a class="nav-link" href="#">Home</a></li>
+				<li><a class="nav-link" href="#">About me</a></li>
+				<li><a class="nav-link" href="#">Projects</a></li>
+				<li><a class="nav-link" href="#">Hobby</a></li>
+				<li><a class="nav-link" href="#">Contact</a></li>
+			</ul></div>
+			</div>
+	</nav>-->
 	<!--Home -->
 	<div class="container" id="HomeTitle">
 		<h1>Jarosław Kaczmarek</h1>
 		<p>Developer, historian and reenactor</p>
 	</div>
-	<img src="man_smoke.jpg" class="image-responsive">
+	<div class="container"><img src="man_smoke.jpg"></div>
 
 	<!-- About -->
 	<div class="container" id="AboutMe">
 		<h3>About me</h3>
-		<hr>
 		<p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 	</div>
 	<div class="container" id="Skills">
-		<h3 id="SkillsHeader">My skills</h3>
+		<h3>My skills</h3>
 			<div class="row" id="first">
 			<div class="col-sm-4"><i class="fab fa-css3-alt 5x"></i></div>
 			<div class="col-sm-4"><i class="fab fa-html5"></i></div>
@@ -70,25 +87,25 @@
 		<div class="row" id="catchall1" >
 			<div class="col-sm-4">
 				<img src="index.png" data-toggle="collapse" data-target="#one">
-				<p id="one" class="collapse">Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+				<p id="one" class="collapse">Since 2017 I was contracted by a British owned XTM International with a task of providing a technical support. Being a part of XTM exposed me to various tools used in the industry like JIRA, Git, PSQL. It enabled me to further my own knowledge about Linux, web applications and development flow. I also took the initiative and by my own started training newcomers in my team- this helped to reduce their habituation period. Although I briefly touched Java while working in XTM, I decided to push myself in 2019 towards front-end technologies.</p>
 			</div>
 			<div class="col-sm-4">
 				<img src="index.png" data-toggle="collapse" data-target="#two">
-				<p id="two" class="collapse">Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+				<p id="two" class="collapse">Steven Erikson tribute page was my very first page created. Looking back I can find some insufficiencies in its code and structure, but I decided to keep it for some reason.</p>
 			</div>
 			<div class="col-sm-4">
 				<img src="index.png" data-toggle="collapse" data-target="#three">
-				<p id="three" class="collapse">Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+				<p id="three" class="collapse">Random quote generator was constructed as a part of FCC challenge. As its name suggests, it takes a random quote found on the Internet and pastes it on a page with a tweet option available.</p>
 			</div>
 			</div>
 			<div class="row" id="catchall2">
 			<div class="col-sm-4">
 				<img src="index.png" data-toggle="collapse" data-target="#six">
-				<p id="six" class="collapse">Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+				<p id="six" class="collapse">Weather app was my first take on implementing AJAX for communication with an external API. In function it's similar to a standard weather app on your regular smartphone.</p>
 			</div>
 			<div class="col-sm-4">
 				<img src="index.png" data-toggle="collapse" data-target="#five">
-				<p id="five" class="collapse">Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+				<p id="five" class="collapse">Wikipedia viewer was my latest project during the FCC. By using AJAX, I created a page that worked as a search engine for Wikipedia articles.</p>
 			</div>
 			<div class="col-sm-4">
 				<img src="index.png" data-toggle="collapse" data-target="#four">
@@ -97,14 +114,15 @@
 		</div>
 	</div>
 	<!-- Hobby -->
-	<div class="container">
+	<div class="container" id="Hobby">
+		<h3>My Hobby</h3>
 	<div class="row">
   <div class="col-md-4">
     <div class="thumbnail">
       <a href="#">
-        <img src="index.png" alt="Lights" style="width:100%">
+        <img src="baltic2.jpg" alt="Baltic Crusade" style="width:100%">
         <div class="caption">
-          <p>Lorem ipsum...</p>
+          <p>A photo taken during the Baltic Crusade historical reenactment. Me and my fellow shieldbearers are standing near the shore line of the Baltic Sea, half an hour after a battle. </p>
         </div>
       </a>
     </div>
@@ -112,19 +130,19 @@
   <div class="col-md-4">
     <div class="thumbnail">
       <a href="#">
-        <img src="index.png" alt="Nature" style="width:100%">
+        <img src="hunt.jpg" alt="Medieval Hunt" style="width:100%">
         <div class="caption">
-          <p>Lorem ipsum...</p>
+          <p>Mid-winter medieval hunt. We are posing to a picture over our rubber prey. The hunt took place in Grzybowo, Wielkopolska somewhere in January 2017.</p>
         </div>
       </a>
     </div>
   </div>
-  <div class="col-md-4">
+  <div class="col-md-4 container">
     <div class="thumbnail">
       <a href="#">
-        <img src="index.png" alt="Fjords" style="width:100%">
+        <img src="wall.jpg" alt="Shieldwall" style="width:100%">
         <div class="caption">
-          <p>Lorem ipsum...</p>
+          <p>Like a wall we stand. During one of countless battles that I participated in.</p>
         </div>
       </a>
     </div>
@@ -132,6 +150,12 @@
 </div>
 </div>
 	<!-- Contact -->
+	<div class="container" id="Contact">
+		<h3>Contact me</h3>
+		<p><i class="fa fa-phone"></i> Phone: +48 796387746</p>
+      <p><i class="fa fa-envelope"> </i> Email: folrunge@gmail.com</p>
+
+	</div>
 </body>
 	
 	<footer>
