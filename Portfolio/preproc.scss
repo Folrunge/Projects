@@ -35,7 +35,8 @@ p, li {
 }
 
 //Navbar style
-ul {
+@media screen and (min-width: 700px) {
+	ul {
 	position: fixed;
 	height: 100%;
 	width: 15%;
@@ -54,7 +55,35 @@ ul {
 		border-color: $navcolor;
 	}
 }
+}
 
+@media screen and (max-width: 600px) {
+	h3 {
+		text-align: center;
+	}
+	#Contact {
+		p {
+			text-align: center;
+		}
+	}
+	#resume {
+		width: 100%;
+		height: auto;
+		margin-left: 15%;
+		margin-right: 18%;
+	}
+	ul {
+		background-color: $navcolor;
+		li {
+		padding: 5%; 
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: none;
+		border-color: $navcolor;
+		}
+	}
+}
 // Different bg color on hover for the navbar
 li:hover {
 	background-color: #7e7e7e;
@@ -130,6 +159,13 @@ h3 {
 	p {
 		background-color: $navcolor;
 		text-align: justify;
+	}
+}
+
+.caption {
+	p {
+		text-align: justify;
+		padding-top: 2%;
 	}
 }
 
