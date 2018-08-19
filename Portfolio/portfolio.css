@@ -1,7 +1,7 @@
 body {
   background-color: #000; }
 
-#HomeTitle, p, li, #Skills, #Clients, #Projects, #Hobby, #Contact, .footer {
+#HomeTitle, p, li, a, a:hover, #Skills, #Clients, #Projects, #Hobby, #Contact, .footer {
   font-family: Montserrat, sans-serif;
   font-weight: bold;
   color: #fff; }
@@ -13,10 +13,13 @@ body {
     padding-top: 2%;
     color: #7e7e7e; }
 
-p, li {
+p, li, a {
   font-size: 18px; }
 
 @media screen and (min-width: 700px) {
+  #burger {
+    display: none; }
+
   ul {
     position: fixed;
     height: 100%;
@@ -48,14 +51,14 @@ p, li {
   ul {
     background-color: #151515; }
     ul li {
+      display: none;
       padding: 5%;
       align-items: center;
       justify-content: center;
       border: none;
       border-color: #151515; } }
 li:hover {
-  background-color: #7e7e7e;
-  cursor: pointer; }
+  background-color: #7e7e7e; }
 
 img {
   display: block;

@@ -29,13 +29,20 @@ body {
 }
 
 // Text styling for general li and p elements
-p, li {
+p, li, a {
 	@extend %navbar;
 	font-size: $font;
 }
 
+a:hover {
+	@extend %navbar;
+}
+
 //Navbar style for media greater than 700px
 @media screen and (min-width: 700px) {
+	#burger {
+		display: none;
+	}
 	ul {
 	position: fixed;
 	height: 100%;
@@ -74,6 +81,7 @@ p, li {
 	ul {
 		background-color: $navcolor;
 		li {
+			display: none;
 		padding: 5%; 
 		align-items: center;
 		justify-content: center;
@@ -85,7 +93,7 @@ p, li {
 // Different bg color on hover for the navbar
 li:hover {
 	background-color: #7e7e7e;
-	cursor: pointer;
+
 }
 
 // Main photo style
