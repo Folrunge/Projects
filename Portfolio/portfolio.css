@@ -1,7 +1,7 @@
 body {
   background-color: #000; }
 
-#HomeTitle, p, li, #Skills, #Clients, #Projects, #Hobby, #Contact, footer {
+#HomeTitle, p, li, #Skills, #Clients, #Projects, #Hobby, #Contact, .footer {
   font-family: Montserrat, sans-serif;
   font-weight: bold;
   color: #fff; }
@@ -21,6 +21,7 @@ ul {
   height: 100%;
   width: 15%;
   left: 0px;
+  top: 0px;
   background-color: #151515;
   overflow-x: hidden; }
   ul li {
@@ -90,8 +91,9 @@ h3 {
 #Contact {
   margin-bottom: 10%; }
 
-footer {
+.footer {
   text-align: center;
+  margin-left: 2%;
   bottom: 0px;
   left: 0px;
   right: 0px;
