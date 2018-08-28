@@ -16,7 +16,7 @@ body {
 p, li, a {
   font-size: 18px; }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 790px) {
   #burger {
     display: none; }
 
@@ -37,7 +37,7 @@ p, li, a {
       height: 13%;
       border: none;
       border-color: #151515; } }
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 789px) {
   h3 {
     text-align: center; }
 
@@ -51,10 +51,8 @@ p, li, a {
   ul {
     background-color: #151515; }
     ul li {
-      display: none;
+      width: 100%;
       padding: 5%;
-      align-items: center;
-      justify-content: center;
       border: none;
       border-color: #151515; } }
 li:hover {

@@ -39,7 +39,7 @@ a:hover {
 }
 
 //Navbar style for media greater than 700px
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 790px) {
 	#burger {
 		display: none;
 	}
@@ -64,7 +64,7 @@ a:hover {
 }
 }
 //Navbar style for media lesser than 690px
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 789px) {
 	h3 {
 		text-align: center;
 	}
@@ -81,12 +81,14 @@ a:hover {
 	ul {
 		background-color: $navcolor;
 		li {
-			display: none;
+		//	display: none;
+		width: 100%;
 		padding: 5%; 
-		align-items: center;
-		justify-content: center;
+		//align-items: center;
+		//justify-content: center;
 		border: none;
 		border-color: $navcolor;
+
 		}
 	}
 }
