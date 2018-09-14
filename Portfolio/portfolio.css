@@ -46,7 +46,8 @@ p, li, a {
 
   #resume {
     width: 100%;
-    height: auto; }
+    height: auto;
+    text-align: center; }
 
   ul {
     background-color: #151515; }
@@ -54,7 +55,8 @@ p, li, a {
       width: 100%;
       padding: 5%;
       border: none;
-      border-color: #151515; } }
+      border-color: #151515;
+      display: none; } }
 li:hover {
   background-color: #7e7e7e; }
 

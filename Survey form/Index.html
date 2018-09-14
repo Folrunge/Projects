@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Survey Form</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<main>
+<body>
+	 <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+     <script src="script.js"></script>
+
+     
+     <form id="survey-form" action="#" method="POST">
+     <div id="form-header">
+     <h2 id="title">Form</h1>
+     <p id="description">GDPR: This page is for demonstration purpose only. Any inputted data won't be saved or passed to other 3rd party sites.</p>
+	</div>
+     <fieldset>
+     		<legend>Personal data</legend>
+     	
+     		<div id="field">
+     		<label id="name-label" for="name">Name </label>
+     	</div>
+     	<div id="field2">
+     		<input required pattern="[A-z]+" class="input-field" type="text" name="name" id="name" placeholder="Insert your name" value="name">
+     	</div>
+     	<div id="field">
+     		<label id="number-label" for="age">Age </label>
+     	</div>
+     	<div id="field2">
+     		<input required class="input-field" type="number" min="1" max="125" name="age" id="age" placeholder="Insert your age" value="age" pattern="/d+">
+     	</div>
+     	<div id="field">
+     		<label id="email-label" for="email">Email </label>
+     	</div>
+     	<div id="field2">
+     		<input required class="input-field" type="email" name="email" id="email" placeholder="Insert your email" value="email">
+     	</div>
+     
+     	
+     </fieldset>
+
+     <fieldset>
+     		<legend>Favorite sf character</legend>
+     		<div>
+     		<select id="dropdown" name="dropdown" required pattern="Spock|Kirk|Chewie|Han\sSolo">
+  				<option selected>Choose options</option>
+  				<option>Spock</option>
+  				<option>Kirk</option>
+  				<option>Chewie</option>
+  				<option>Han Solo</option>
+			</select>
+		</div>
+	</fieldset>
+
+<fieldset>
+  			<legend>Weapon of choice</legend>
+  			<div>
+		  <ul>
+		    <li>
+		      <label for="soup">Flamethrower</label>
+		      <input type="radio" id="soup" name="meal" value="soup">
+		    </li>
+		    <li>
+		      <label for="curry">Blaster</label>
+		      <input type="radio" id="curry" name="meal" value="curry">
+		    </li>
+		    <li>
+		      <label for="pizza">Phazer</label>
+		      <input type="radio" id="pizza" name="meal" value="pizza">
+		    </li>
+		  </ul>
+		</div>
+</fieldset>
+
+<fieldset>
+		<legend>Vacation spot</legend>
+		<div id="check1">
+		<div id="check2">
+		<div>
+			<label id="check" for="carrots">Galaxy far, far away</label>
+		</div>
+		<div>
+			<input type="checkbox" id="carrots" name="carrots" value="carrots">
+		</div>
+		<div>
+			<label id="check" for="carrots">Where no one has been</label>
+		</div>
+		<div>
+			<input type="checkbox" id="carrots" name="carrots" value="carrots">
+		</div>
+		<div>
+			<label id="check" for="carrots">Korriban</label>
+		</div>
+		</div>
+		<div id="check3">
+		<div>
+			<input type="checkbox" id="carrots" name="carrots" value="carrots">
+		</div>
+		<div>
+			<label id="check" for="carrots">Zegama Beach</label>
+		</div>
+		<div>
+			<input type="checkbox" id="carrots" name="carrots" value="carrots">
+		</div>
+		<div>
+			<label id="check" for="carrots">Earth</label>
+		</div>
+		<div>
+			<input type="checkbox" id="carrots" name="carrots" value="carrots">
+		</div>
+		<div>
+			<label id="check" for="carrots">Vulcan</label>
+		</div>
+		<div>
+			<input type="checkbox" id="carrots" name="carrots" value="carrots">
+		</div>
+		</div>
+		</div>
+</fieldset>
+
+<fieldset>
+	<legend>Comments</legend>
+			<div>
+		     <textarea name="comments" id="comments" placeholder="Enter your comment here" class="input-field"></textarea>
+		     	</div>
+</fieldset>
+		<div id="button">
+		     		<button class="btn" id="submit" type="submit">Submit your survey</button>
+		     	</div>
+     </form>
+ </body>
+</main>
+</html>

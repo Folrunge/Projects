@@ -16,8 +16,10 @@
 </head>
 
 <body>
-	 <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<!-- jQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
     <!-- Popper.JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
@@ -33,11 +35,11 @@
 	<nav>
 			<ul class="nav">
 				<button id="burger" type="button" class="btn btn-dark"><i class="fas fa-bars"></i></button>
-				<li class="current"><a  href="#HomeTitle">Home</a></li>
-				<li><a  href="#AboutMe">About me</a></li>
-				<li><a  href="#Projects">Projects</a></li>
-				<li><a  href="#Hobby">Hobby</a></li>
-				<li><a  href="#Contact">Contact</a></li>
+				<li class="current tog"><a id="bar" href="#HomeTitle">Home</a></li>
+				<li class="tog"><a id="bar" href="#AboutMe">About me</a></li>
+				<li class="tog"><a id="bar" href="#Projects">Projects</a></li>
+				<li class="tog"><a id="bar" href="#Hobby">Hobby</a></li>
+				<li class="tog"><a id="bar" href="#Contact">Contact</a></li>
 			</ul>
 	</nav>
 	</div>
@@ -76,6 +78,7 @@
 			<div class="col-xs-3 col-md-3"><p>Solved problems <br/> +200</p></div>
 		</div>
 	</div>
+
 	<div class="container" id="resume">
 	<button class="btn btn-dark">
       <i class="fa fa-download"></i> Download Resume

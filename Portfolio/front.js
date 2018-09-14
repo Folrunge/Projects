@@ -1,8 +1,7 @@
 $(document).ready(function () {
-$(function(){
-	$('li').hide();
-})
-$('#burger').on('click', function(){
-	$('li').toggle();
+
+
+$('#burger').click(function(){
+	$('.tog').slideToggle(450);
 });
 });
