@@ -1,7 +1,114 @@
-ul {
-	list-style: none;
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  background-color: #eee;
+  margin: 0;
+  line-height: 1.6;
 }
 
+/*Navbar*/
+
+nav {
+	position: fixed;
+	height: 50px;
+  width: 100%;
+  background-color: #333;
+  color: #eee;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  display: inline;
+ float: left;
+}
+
+.link {
+	margin-right: 2%;
+	margin-left: 2%;
+	margin-top: 0.7%;
+}
+
+nav a {
+  display: inline-block;
+  width: auto;
+  text-align: center;
+  text-decoration: none;
+  color: #eee;
+  text-decoration: none;
+}
+
+nav li:hover {
+  background-color: #444;
+}
+nav a#openup {
+  display: none;
+}
+
+@media screen and (max-width: 580px) {
+
+
+  nav {
+    height: auto;
+    border-bottom: 0;
+  }
+  nav ul {
+    display: none;
+    height: auto;
+  }
+  nav li {
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+  nav a {
+    text-align: left;
+    width: 100%;
+    text-indent: 25px;
+    background: #333;
+    border-bottom: 1px solid #555;
+  }
+  nav a:hover {
+    background: #444;
+  }
+  nav a#openup:after {
+    content: "|||";
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-90deg);
+    /* Safari and Chrome */
+    width: 30px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    top: 20px;
+  }
+  nav a#openup {
+    display: block;
+    background-color: #333;
+    width: 100%;
+    position: relative;
+  }
+}
+.cf:before, .cf:after {
+  content: "";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+}
+
+
+/*Container for the rest */
 #contain {
 	width: 100%;
 	height: auto;
@@ -10,11 +117,45 @@ ul {
 	grid-template-rows: 100% 100% 100%;
 }
 
-.nav-link {
-	color: #000;
-	text-align: right;
+#col1 {
+	margin-bottom: 2%;
 }
 
-a:hover {
-	color: #000;
+#col2, #col3, #col4, #col5 {
+	padding: 2%;
+}
+
+#features {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#features h3 {
+	text-align: left;
+}
+
+#features p {
+	text-align: left;
+}
+
+#col5 {
+	display: flex;
+	flex-flow: row;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#col5 #models {
+	padding: 2%;
+	height: 500px;
+	width: 250px;
+	background-color: orange;
+	margin-left: 1%;
+	margin-right: 1%;
+	border-radius: 1%;
+}
+
+#models h3 {
+	background-color: #fff;
 }
