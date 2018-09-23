@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
 @import url('https://fonts.googleapis.com/css?family=Holtwood+One+SC');
 
+ul {
+	list-style: none;
+}
+
 body {
   font-family: 'PT Sans', sans-serif;
   background-color: #eee;
@@ -63,6 +67,7 @@ nav a#openup {
 	flex-flow: column;
 }
 
+/* Title crawl */
 #crawl {
 	margin-top: 4%;
 }
@@ -82,7 +87,7 @@ nav a#openup {
 /* Features */
 #engines, #lasers, #interface {
 	background-color: hsl(0, 0%, 9%);
-	color: #fff;
+	color: hsla(238, 49%, 95%, 1);
 	display: flex;
 	flex-flow: row;
 }
@@ -103,31 +108,36 @@ nav a#openup {
 	margin-bottom: auto;
 }
 
+/* Video section */
 #col4 {
 	margin-top: 2%;
 	margin-bottom: 2%;
 	width: 100%;
 	height: auto;
+	background-color: hsla(238, 49%, 95%, 1);
 }
 
+/* Header for PO section */
 #col5a {
-	background-color: #000;
-	color: #fff;
+	background-color: hsl(0, 0%, 9%);
+	color: hsla(238, 49%, 95%, 1);
 }
 
+/* Container for PO section */
 #col5 {
-	color: #000;
+	color: hsl(0, 0%, 9%);
 	display: flex;
 	flex-flow: row;
 	width: 100%;
-	background-color: #000;
+	background-color: hsl(0, 0%, 9%);
 }
 
+/* Models columns */
 #col5 #models {
 	padding: 2%;
-	height: 500px;
+	height: 400px;
 	width: 250px;
-	background-color: orange;
+	background-color: hsla(238, 49%, 95%, 1);
 	margin-left: auto;
 	margin-right: auto;
 	border-radius: 1%;
@@ -135,10 +145,16 @@ nav a#openup {
 	margin-bottom: 1%;
 }
 
-#models h3 {
-	background-color: #fff;
+/* Email section */
+#col3 {
+	margin-bottom: 2%;
 }
 
+footer {
+	color: hsl(0, 0%, 9%);	
+}
+
+/* Media query */
 @media screen and (max-width: 580px) {
 
 

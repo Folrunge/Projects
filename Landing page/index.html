@@ -13,23 +13,25 @@
 	<script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 	<script src="main.js"></script>
 
+<!-- Container for all content -->
 <div id="contain">
 
+<!-- Navbar -->
 <div id="col1">
 <header id="header">
-<nav class='cf'>
+<nav class='cf' id="nav-bar">
   <ul class='cf'>
     <li id="brand">
-    	<a href="#brand"><img src="soro.png"></a>
+    	<a href="#brand"><img id="header-img" src="soro.png"></a>
     </li>
     <li class="link">
-      <a href='#features'>Features</a>
+      <a href='#features' class="nav-link">Features</a>
     </li>
     <li class="link">
-      <a href='#watch'>Watch it in action</a>
+      <a href='#watch' class="nav-link">Watch it in action</a>
     </li>
     <li class="link">
-      <a href='#order'>Order now!</a>
+      <a href='#order' class="nav-link">Order now!</a>
     </li>
   </ul>
   <a href='#' id='openup'>MENU</a>
@@ -37,6 +39,7 @@
 </header>
 </div>
 
+<!-- Title crawl -->
 <div id="col2">
 	<div id="crawl">
 	<h1>Reach out to the stars with SoroSuub!</h1>
@@ -45,7 +48,8 @@
 	</div>
 </div>
 
-<div id="col2a">
+<!-- Product's features -->
+<div id="features">
 	<div id="engines">
 		<img id="engine" src="engine.png">
 		<div id="promotext">
@@ -69,14 +73,16 @@
 	</div>
 </div>
 
+<!-- The video -->
 <div id="col4">
 	<div>
 		<h2>Watch it in action and look for yourself how efficient it is in destroying rebel ships!</h2>
 	</div>
 
- <iframe width="560" height="315" src="https://www.youtube.com/embed/E9GRYa_3gno?start=90" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+ <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/E9GRYa_3gno?start=90" frameborder="0" allow="autoplay; encrypted-media"></iframe>
 </div>
 		
+<!-- PO section -->
 <div id="col5a"><h3>Order now one of our latests models!</h3>
 	<div id="col5">
 	<div id="models">
@@ -93,15 +99,20 @@
 	</div>
 </div>
 </div>
+
+<!-- Email section -->
 <div id="col3">
 	<div>
 		<h2>Send us your coordinates and we will contact you</h2>
 	</div>
-<form id="form">
+<form id="form" action="https://www.freecodecamp.com/email-submit">
 	<input id="email" type="email" name="email" placeholder="Insert your email" required>
-	<button id="submit">Submit</button>
+	<input type="submit" value="Submit" id="submit"></input>
 </form>
 </div>
+<footer>
+    <span>Copyright 1 ABY, SoroSuub</span>
+  </footer>
 </div>
 </body>
 </main>
